@@ -39,7 +39,7 @@ nav {
 }
 
 nav img {
-  width: 25%;
+  width: 20%;
   position: relative;
   z-index: 10;
 }
@@ -109,11 +109,11 @@ nav button {
 }
 
 .btn-red-sm {
-  background-color: red;
-  color: white;
-  height: 46px;
-  width: 118px;
-  font-size: 19px;
+ background-color: red;
+    color: #fff;
+    font-size: 15px;
+    height: 39px;
+    width: 101px;
 }
 
 .hero-buttons {
