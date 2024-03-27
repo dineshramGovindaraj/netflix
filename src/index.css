@@ -65,19 +65,19 @@ nav button {
 .hero > :nth-child(1) {
   font-family: "Poppins", sans-serif;
   font-weight: bolder;
-  font-size: 60px;
+  font-size: 50px;
   text-align: center;
 }
 
 .hero > :nth-child(2) {
   font-weight: 500;
-  font-size: 40px;
+  font-size: 35px;
   text-align: center;
 }
 
 .hero > :nth-child(3) {
   font-weight: 500;
-  font-size: 25px;
+  font-size: 20px;
   text-align: center;
 }
 
@@ -102,7 +102,7 @@ nav button {
   background-color: red;
   color: white;
   padding: 3px 24px;
-  font-size: 19px;
+  font-size: 17px;
   border-radius: 4px;
   font-weight: 400;
   height: 54px;
