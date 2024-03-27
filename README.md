@@ -1,3 +1,9 @@
+
+![img-3](https://github.com/shahmeerrizwan/Netflix-Clone-React/assets/148860820/e97f285a-be7d-4033-8a1e-3d3f727b3f09)
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
