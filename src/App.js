@@ -1,33 +1,39 @@
-import React from 'react'
-import FirstSection from './Components/FirstSection';
-import BreakLine from './Components/BreakLine';
-import SecondSection from './Components/SecondSection';
-import ThirdSection from './Components/ThirdSection';
-import FourthSection from './Components/FourthSection';
-import CardSection from './Components/Card/CardSection';
-import FifthSection from './Components/FifthSection';
-import QuestionsSection from './Components/QuestionsSection';
-import Footer from './Components/Footer';
-
+import React, { useState } from "react";
+import Home from "./pages/Home";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate,
+} from "react-router-dom";
+import Login from "./Components/Login/Login";
+import Register from "./Components/Register/Register";
+import MovieSearch from "./Components/Search/MovieSearch";
 
 function App() {
+  const [isRegistered, setIsRegistered] = useState(false);
+
   return (
-    <div >
-      <FirstSection />
-      <CardSection />
-      <BreakLine />
-      <SecondSection />
-      <BreakLine />
-      <ThirdSection />
-      <BreakLine />
-      <FourthSection />
-      <BreakLine />
-      <FifthSection />
-      <BreakLine />
-      <QuestionsSection />
-      <BreakLine />
-      <Footer />
-    </div>
+    <Router>
+      <div>
+        <Routes>
+          <Route path="/" element={<Home />}/>
+          <Route
+            path="/register"
+            element={<Register onRegister={() => setIsRegistered(true)} />}
+            // element={<Register />}
+          />
+          <Route
+            path="/login"
+            element={isRegistered ? <Login /> : <Navigate to="/login" />}
+            // element ={<Login />}
+          />
+          <Route path="*" element={<Navigate to="/register" />} />
+          <Route path="/search" element={<MovieSearch />} />
+        </Routes>
+      </div>
+    </Router>
+    // <MovieSearch />
   );
 }
 

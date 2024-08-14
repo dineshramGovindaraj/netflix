@@ -7,29 +7,29 @@ export default function Footer() {
                 <div className="questions">Questions? Contact Us</div>
                 <div className="footer">
                     <div className="footer-item">
-                        <a target='blank' href="https://www.linkedin.com/in/muhammadshahmeerrizwan/">MSR</a>
-                        <a target='blank' href="https://www.linkedin.com/in/muhammadshahmeerrizwan/">Muhammad Shahmeer</a>
-                        <a target='blank' href="https://www.linkedin.com/in/muhammadshahmeerrizwan/">Privacy</a>
-                        <a target='blank' href="https://www.linkedin.com/in/muhammadshahmeerrizwan/">Speed Test</a>
+                        <a target='blank' href="1">MSR</a>
+                        <a target='blank' href="1">Dinesh Ram</a>
+                        <a target='blank' href="1">Privacy</a>
+                        <a target='blank' href="1">Speed Test</a>
                     </div>
 
                     <div className="footer-item">
-                        <a target='blank' href="https://www.linkedin.com/in/muhammadshahmeerrizwan/">Help Centre</a>
-                        <a target='blank' href="https://www.linkedin.com/in/muhammadshahmeerrizwan/">Jobs</a>
-                        <a target='blank' href="https://www.linkedin.com/in/muhammadshahmeerrizwan/">cookie prefrences</a>
-                        <a target='blank' href="https://www.linkedin.com/in/muhammadshahmeerrizwan/">Legal Notices</a>
+                        <a target='blank' href="1">Help Centre</a>
+                        <a target='blank' href="1">Jobs</a>
+                        <a target='blank' href="1">cookie prefrences</a>
+                        <a target='blank' href="1">Legal Notices</a>
                     </div>
                     <div className="footer-item">
-                        <a target='blank' href="https://www.linkedin.com/in/muhammadshahmeerrizwan/">Account</a>
-                        <a target='blank' href="https://www.linkedin.com/in/muhammadshahmeerrizwan/">Ways to Watch</a>
-                        <a target='blank' href="https://www.linkedin.com/in/muhammadshahmeerrizwan/">Corporate Information</a>
-                        <a target='blank' href="https://www.linkedin.com/in/muhammadshahmeerrizwan/">Only on Netflix</a>
+                        <a target='blank' href="1">Account</a>
+                        <a target='blank' href="1">Ways to Watch</a>
+                        <a target='blank' href="1">Corporate Information</a>
+                        <a target='blank' href="1">Only on Netflix</a>
                     </div>
 
                     <div className="footer-item">
-                        <a target='blank' href="https://www.linkedin.com/in/muhammadshahmeerrizwan/">Media center</a>
-                        <a target='blank' href="https://www.linkedin.com/in/muhammadshahmeerrizwan/">Term of Use</a>
-                        <a target='blank' href="https://www.linkedin.com/in/muhammadshahmeerrizwan/">Contact Us</a>
+                        <a target='blank' href="1">Media center</a>
+                        <a target='blank' href="1">Term of Use</a>
+                        <a target='blank' href="1">Contact Us</a>
                     </div>
                     <div className="footer-item">
                         <button className="footer-btn">
@@ -37,9 +37,9 @@ export default function Footer() {
                                 className="fa-solid fa-caret-down"
                             ></i>
                         </button>
-                        <div>Netflix on Pakistan </div>
+                        <div>Netflix India </div>
                         <div>Made By  </div>
-                        <div>Shahmeer Rizwan </div>
+                        <div>Dinesh Ram </div>
 
                     </div>
                 </div>
