@@ -624,6 +624,9 @@ footer .questions {
   .mov-nav {
     margin-top: 20px;
     align-items: center;
-  justify-content: space-around;
+    justify-content: space-around;
+  }
+  .login-hero {
+    margin-top: -160px;
   }
 }
