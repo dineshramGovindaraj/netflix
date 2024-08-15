@@ -11,9 +11,12 @@ const Register = ({ onRegister }) => {
     const user = { username, password };
     localStorage.setItem("user", JSON.stringify(user));
     onRegister();
-    alert("Registration Successful");
-    navigate("/login");
+    console.log(user);
   };
+  function regAlert() {
+    alert("Registeration Successfull");
+    navigate("/login");
+  }
 
   return (
     <div>
@@ -23,13 +26,13 @@ const Register = ({ onRegister }) => {
             <img
               width="53"
               src="https://www.edigitalagency.com.au/wp-content/uploads/netflix-logo-png-large.png"
-              alt="Netflix Logo"
+              alt=""
             />
           </span>
         </nav>
         <div className="box"></div>
-        <div className="hero">
-          <div className="login-hero login-box ">
+        <div className="hero ">
+          <div className="login-hero login-box">
             <div>
               <h2 className="login-head">Register</h2>
               <form onSubmit={handleSubmit}>
@@ -53,7 +56,11 @@ const Register = ({ onRegister }) => {
                     placeholder="Enter your password"
                   />
                 </div>
-                <button type="submit" className="btn btn-red-sm">
+                <button
+                  type="submit"
+                  onClick={regAlert}
+                  className="btn btn-red-sm"
+                >
                   Register
                 </button>
               </form>
@@ -67,7 +74,6 @@ const Register = ({ onRegister }) => {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

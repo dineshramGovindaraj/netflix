@@ -1,7 +1,7 @@
-import React, { useState} from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
-
+import Footer from "../Footer";
 const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -11,7 +11,6 @@ const Login = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const storedUser = JSON.parse(localStorage.getItem("user"));
-
     if (
       storedUser &&
       storedUser.username === username &&
@@ -19,7 +18,7 @@ const Login = () => {
     ) {
       setError("");
       alert("Login successful!");
-      navigate('/');
+      navigate("/search");
     } else {
       setError("Invalid username or password");
     }
@@ -43,7 +42,6 @@ const Login = () => {
             <h2 className="login-head">Sign in</h2>
             <form onSubmit={handleSubmit}>
               <div>
-                {/* <label className="login-text" >Username:</label> */}
                 <input
                   type="text"
                   value={username}
@@ -54,7 +52,6 @@ const Login = () => {
                 />
               </div>
               <div>
-                {/* <label className="login-text" >Password:</label> */}
                 <input
                   type="password"
                   value={password}
@@ -68,13 +65,22 @@ const Login = () => {
                 Login
               </button>
             </form>
-            {error && <p style={{ color: "red" }} className="login-error">{error}</p>}
+            {error && (
+              <p style={{ color: "red" }} className="login-error">
+                {error}
+              </p>
+            )}
             <p className="login-text">
-              Don't have an account? <Link to="/register" className="login-link" >Register</Link>
+              Don't have an account?{" "}
+              <Link to="/register" className="login-link">
+                Register
+              </Link>
             </p>
           </div>
         </div>
       </div>
+      {/* <h1>hi</h1> */}
+      <Footer />
     </div>
   );
 };

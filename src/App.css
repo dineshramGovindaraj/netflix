@@ -1,9 +1,611 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+.main {
+  background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/5e16108c-fd30-46de-9bb8-0b4e1bbbc509/1ff59121-777a-410e-afeb-6da82228426f/PK-en-20240205-popsignuptwoweeks-perspective_alpha_website_small.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 110vh;
+  object-fit: contain;
+}
+
+.main .box {
+  height: 110vh;
+  width: 100%;
+  opacity: 0.69;
+  position: absolute;
+  top: 0;
+  background-color: black;
+}
+
+nav {
+  width: 74vw;
+  justify-content: space-between;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  height: 100px;
+}
+
+nav img {
+  width: 20%;
+  position: relative;
+  z-index: 10;
+}
+
+nav button {
+  position: relative;
+  z-index: 10;
+}
+
+.hero {
+  font-family: "Martel Sans", sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  position: relative;
+  gap: 23px;
+  padding: 0 30px;
+}
+
+.hero > :nth-child(1) {
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  font-size: 50px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hero > :nth-child(2) {
+  font-weight: 500;
+  font-size: 35px;
+  text-align: center;
 }
 
+.hero > :nth-child(3) {
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+}
+
+.separation {
+  height: 7px;
+  background-color: rgb(46, 44, 44);
+  position: relative;
+  z-index: 20;
+}
+
+.btn {
+  padding: 3px 8px;
+  font-weight: 400;
+  color: white;
+  background-color: rgba(248, 243, 243, 0.021);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-red {
+  background-color: red;
+  color: white;
+  padding: 3px 24px;
+  font-size: 17px;
+  border-radius: 4px;
+  font-weight: 400;
+  height: 54px;
+}
+
+.btn-red-sm {
+  background-color: red;
+  color: #fff;
+  font-size: 15px;
+  height: 39px;
+  width: 101px;
+}
+
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  z-index: 10000;
+}
+
+.hero-buttons input {
+  padding: 7px 101px 8px 14px;
+  color: white;
+  font-size: 20px;
+  font-weight: bolder;
+  border-radius: 4px;
+  z-index: 100000;
+  background-color: rgba(23, 23, 23, 0.7);
+  border: 1px solid rgba(246, 238, 238, 0.5);
+  height: 39px;
+  width: 300px;
+}
+
+.first {
+  display: flex;
+  max-width: 80vw;
+  margin: auto;
+  color: white;
+  align-items: center;
+}
+
+.third {
+  max-width: 85vw;
+}
+
+.secImg img {
+  width: 555px;
+  z-index: 10;
+}
+
+.scnd {
+  width: 100% !important;
+}
+
+.secImg video {
+  position: absolute;
+  top: 120px;
+  right: 75px;
+  width: 410px;
+}
+
+section.first > div {
+  display: flex;
+  flex-direction: column;
+  padding: 34px 0;
+  position: relative;
+}
+
+section.first > div :nth-child(1) {
+  font-size: 48px;
+  font-weight: bolder;
+}
+
+section.first > div :nth-child(2) {
+  font-size: 24px;
+}
+
+.faq h2 {
+  text-align: center;
+  font-size: 48px;
+}
+
+.faq {
+  background: black;
+  color: white;
+  padding: 34px;
+}
+
+.faqbox:hover {
+  background-color: #414141;
+  color: white;
+}
+
+.qna {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 400;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.faqbox {
+  transition: all 1s ease-out;
+  font-size: 24px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #2d2d2d;
+  padding: 26px;
+  max-width: 70vw;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+.inp {
+  margin-bottom: 50px;
+}
+
+footer {
+  color: white;
+  max-width: 90vw;
+  margin-left: 100px;
+  padding: 40px;
+}
+
+footer .questions {
+  padding: 24px 0;
+  text-decoration: underline;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  color: white;
+  line-height: 10px;
+  text-wrap: nowrap;
+}
+
+.footer-btn {
+  width: 110px;
+  padding: 3px;
+  color: white;
+  background-color: rgb(19, 17, 17);
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  nav {
+    width: 90vw;
+  }
+
+  .first {
+    flex-wrap: wrap;
+  }
+
+  .secImg {
+    margin: auto;
+  }
+
+  .secImg img {
+    width: 490px;
+  }
+
+  .secImg video {
+    position: absolute;
+    left: 65px;
+    top: 110px;
+  }
+
+  .hero > :nth-child(1) {
+    font-size: 44px;
+  }
+
+  .hero > :nth-child(2) {
+    font-size: 27px;
+  }
+
+  .hero > :nth-child(3) {
+    font-size: 21px;
+  }
+
+  .hero-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .faq h2 {
+    text-align: center;
+    font-size: 32px;
+  }
+
+  footer {
+    max-width: 90vw;
+    padding: 75px 0;
+  }
+
+  .footer-item {
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .hero > :nth-child(2) {
+    font-size: 20px;
+  }
+
+  .hero > :nth-child(3) {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .hero > :nth-child(1) {
+    font-size: 30px;
+  }
+
+  .hero > :nth-child(2) {
+    font-size: 17px;
+  }
+
+  .hero > :nth-child(3) {
+    font-size: 13px;
+  }
+
+  .hero-buttons input {
+    width: 190px;
+  }
+
+  nav img {
+    width: 38% !important;
+  }
+
+  .btn-red-sm {
+    height: 31px;
+    width: 76px;
+    font-size: 14px;
+  }
+
+  .btn-red {
+    width: 135px;
+    font-size: 13px;
+    height: 36px;
+  }
+
+  .hero-buttons input {
+    font-size: 16px;
+  }
+
+  .secImg img {
+    width: 279px;
+  }
+
+  .secImg video {
+    position: absolute;
+    left: 37px;
+    top: 77px;
+    right: 75px;
+    width: 207px;
+  }
+
+  section.first > div :nth-child(1) {
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  section.first > div :nth-child(2) {
+    font-size: 15px;
+  }
+
+  nav {
+    height: 55px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  nav img {
+    width: 30% !important;
+  }
+
+  .footer {
+    margin-right: 63px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 89px;
+  }
+
+  footer .questions {
+    margin-bottom: 28px;
+    margin-right: 95px;
+  }
+
+  .questions {
+    text-align: center;
+    margin: auto;
+  }
+}
+
+.footer a {
+  font-size: 14px;
+  color: white;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  margin-right: 32px;
+}
+/* .login-hero {
+  border: 1px solid red;
+  background-color: black;
+  backdrop-filter: blur(10px); 
+} */
+.login-box {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  max-width: 400px;
+  width: 100%;
+  border: 2px solid red; /* Red border */
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.login-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: inherit; /* Inherit the background */
+  backdrop-filter: blur(10px); /* Apply blur */
+  z-index: -1;
+  border-radius: 10px; /* To match the login box radius */
+}
+.login-head {
+  font-size: 30px;
+  text-align: left;
+  margin: 20px;
+}
+.login-field {
+  width: 80%;
+  height: 35px;
+  background-color: #2d2d2d;
+  border: 0px;
+  color: white;
+  padding: 10px;
+}
+.login-text {
+  font-size: 15px;
+  margin: 20px;
+}
+.login-link {
+  text-decoration: none;
+}
+.login-error {
+  font-size: 15px;
+}
+.common-colour {
+  color: white;
+}
+
+.movies-card {
+  border: 3px solid red;
+  width: 350px;
+  border-radius: 5px;
+  /* display: flex; */
+}
+.movie-img {
+  border-radius: 5px;
+  width: 100%;
+  height: 350px;
+}
+.movie-title {
+  font-size: 20px;
+  margin: 20px;
+}
+.movie-overview {
+  font-size: 15px;
+  margin: 20px;
+}
+.movie-flex {
+  display: flex;
+}
+.movie-btn {
+  margin: 20px;
+}
+.not-found {
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+}
+.search-btn {
+  margin-top: 20px;
+}
+.nav-img {
+  height: 50px;
+  width: 200px;
+  margin: 20px;
+}
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* 1 column on small screens */
+  gap: 20px; /* Gap between the movie cards */
+  padding: 10px;
+  margin: 150px;
+  margin-top: 100px;
+}
+
+.movies-card {
+  background-color: black;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(247, 242, 242, 0.2);
+  /* margin: 60px; */
+}
+
+.movie-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.movies-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #000;
+  border: 1px solid red;
+}
+
+.movie-content {
+  flex-grow: 1;
+  margin-bottom: 20px;
+}
+
+.movie-img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.movie-btn {
+  align-self: center;
+  margin-top: auto;
+}
+
+@media (min-width: 768px) {
+  .movie-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+    /* margin: 0px;
+    margin-top: 0px; */
+  }
+}
+
+@media (min-width: 1200px) {
+  .movie-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns on large screens */
+    /* margin: 0px;
+    margin-top: 0px; */
+  }
+}
+@media (max-width: 550px) {
+  .movie-grid {
+    /* padding: 54px; */
+    margin-top: -10px;
+    margin: 27px;
+  }
+  .nav-img {
+    height: 40px;
+    /* width: 0px; */
+    margin: 20px;
+    margin: 20px;
+  }
+  .movies-card {
+    height: 75%;
+  }
+  .movie-img{
+    height: 40%;
+  }
+  .movies-margine{
+    margin-bottom: -190px;
+  }
+  .login-field{
+    margin-bottom: 15px;
+  }
+  .hero{
+    margin: 30px;
+  }
+}

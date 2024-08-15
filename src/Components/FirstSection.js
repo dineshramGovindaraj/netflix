@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export default function FirstSection() {
+
   return (
     <div>
       <div className="main">
@@ -14,19 +15,16 @@ export default function FirstSection() {
             />
           </span>
           <div>
-            <Link to="/search">
-              {/* <i
-                className="fa fa-search"
-                style={{ fontSize: "48px", color: "white" }}
-              ></i> */}
+            {/* <Link to="/search">
               <button> Search</button>
-            </Link>
+            </Link> */}
           </div>
           <div>
-            <Link to="/login">
+            <Link to="/register">
               <button className="btn btn-red-sm">Sign In</button>
             </Link>
           </div>
+          {/* <Link to='/register'>Signup</Link> */}
         </nav>
         <div className="box"></div>
         <div className="hero">
