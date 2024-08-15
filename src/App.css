@@ -4,6 +4,7 @@
   padding: 0;
   margin: 0;
   font-family: "Poppins", sans-serif;
+  text-decoration: none;
 }
 
 body {
@@ -496,6 +497,7 @@ footer .questions {
 }
 .movie-overview {
   font-size: 15px;
+  text-align: justify;
   margin: 20px;
 }
 .movie-flex {
@@ -544,7 +546,7 @@ footer .questions {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  padding: 20px;
+  padding: 8px;
   box-sizing: border-box;
   background-color: #000;
   border: 1px solid red;
@@ -564,6 +566,11 @@ footer .questions {
 .movie-btn {
   align-self: center;
   margin-top: auto;
+}
+.mov-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 @media (min-width: 768px) {
@@ -589,23 +596,34 @@ footer .questions {
   }
   .nav-img {
     height: 40px;
-    /* width: 0px; */
-    margin: 20px;
-    margin: 20px;
+    width: 120px;
+    margin: 15px;
+    margin-left: 0px;
   }
   .movies-card {
     height: 75%;
+    padding: 6px;
+    width: 304px;
   }
-  .movie-img{
+  .movie-img {
     height: 40%;
   }
-  .movies-margine{
+  .movies-margine {
     margin-bottom: -190px;
+    margin-left: -8px;
   }
-  .login-field{
+  .login-field {
     margin-bottom: 15px;
   }
-  .hero{
+  .hero {
     margin: 30px;
+  }
+  .mov-btn {
+    width: 86px;
+  }
+  .mov-nav {
+    margin-top: 20px;
+    align-items: center;
+  justify-content: space-around;
   }
 }

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Footer from "../Footer";
+import logo from "../assets/netflix.png";
 const MovieSearch = () => {
   const [movieList, setMovieList] = useState([]);
   const [query, setQuery] = useState("");
@@ -59,19 +60,20 @@ const MovieSearch = () => {
   }
   return (
     <div>
-      <nav>
-        <span>
-          <img
-            width="53"
-            src="https://www.edigitalagency.com.au/wp-content/uploads/netflix-logo-png-large.png"
-            alt=""
-            className="nav-img"
-          />
-        </span>
-        <button type="submit" className="btn btn-red " onClick={handleLogout}>
-          logout
-        </button>
-      </nav>
+      <div className="mov-nav">
+        <div className="a">
+          <img src={logo} alt="" className="nav-img" />
+        </div>
+        <div className="b">
+          <button
+            type="submit"
+            className="btn btn-red mov-btn"
+            onClick={handleLogout}
+          >
+            logout
+          </button>
+        </div>
+      </div>
       <form onSubmit={handleSearch}>
         <div className="hero-buttons search-btn">
           <input
