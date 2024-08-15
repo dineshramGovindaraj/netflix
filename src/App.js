@@ -10,7 +10,7 @@ import {
 import Login from "./Components/Login/Login";
 import Register from "./Components/Register/Register";
 import MovieSearch from "./Components/Search/MovieSearch";
-// import MovieSearch from "./Components/Search/MovieSearch";
+
 
 function App() {
   const [isRegistered, setIsRegistered] = useState(false);
@@ -32,13 +32,11 @@ function App() {
               path="/login"
               element={isRegistered ? <Login /> : <Navigate to="/register" />}
             />
-            <Route path="*" element={<Navigate to="/login" />} />
+            <Route path="*" element={<Navigate to="/" />} />
             <Route path="/search" element={<MovieSearch />} />
           </Routes>
         </div>
       </Router>
-
-      {/* <Login /> */}
     </>
   );
 }
